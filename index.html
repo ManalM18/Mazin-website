@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mazin Munir | AI Agent Automation Agency & Workflows</title>
-  <meta name="description" content="Custom-engineered multi-agent swarms, cognitive data integrations, and enterprise process automation designed by Mazin Munir and team.">
-  <meta name="keywords" content="AI agent, multi-agent swarms, workflow automation, enterprise AI, cognitive data pipelines, LLM integration, OCR parser, business automation, Mazin Munir">
-  
-  <!-- OpenGraph / Social Cards Meta Tags -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mazinmunir.com/">
-  <meta property="og:title" content="Mazin Munir | AI Agent Automation Agency & Workflows">
-  <meta property="og:description" content="Deploy custom autonomous multi-agent networks and cognitive data pipelines. Reclaim hundreds of hours weekly.">
-  <meta property="og:image" content="https://mazinmunir.com/assets/ecommerce.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazin Munir | AI Agent Automation Agency & Workflows</title>
+    <meta name="description"
+        content="Custom-engineered multi-agent swarms, cognitive data integrations, and enterprise process automation designed by Mazin Munir and team.">
+    <meta name="keywords"
+        content="AI agent, multi-agent swarms, workflow automation, enterprise AI, cognitive data pipelines, LLM integration, OCR parser, business automation, Mazin Munir">
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://mazinmunir.com/">
-  <meta name="twitter:title" content="Mazin Munir | AI Agent Automation Agency & Workflows">
-  <meta name="twitter:description" content="Deploy custom autonomous multi-agent networks and cognitive data pipelines. Reclaim hundreds of hours weekly.">
-  <meta name="twitter:image" content="https://mazinmunir.com/assets/ecommerce.png">
+    <!-- OpenGraph / Social Cards Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mazinmunir.com/">
+    <meta property="og:title" content="Mazin Munir | AI Agent Automation Agency & Workflows">
+    <meta property="og:description"
+        content="Deploy custom autonomous multi-agent networks and cognitive data pipelines. Reclaim hundreds of hours weekly.">
+    <meta property="og:image" content="https://mazinmunir.com/assets/ecommerce.png">
 
-  <!-- Structured Data JSON-LD for SEO -->
-  <script type="application/ld+json">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://mazinmunir.com/">
+    <meta name="twitter:title" content="Mazin Munir | AI Agent Automation Agency & Workflows">
+    <meta name="twitter:description"
+        content="Deploy custom autonomous multi-agent networks and cognitive data pipelines. Reclaim hundreds of hours weekly.">
+    <meta name="twitter:image" content="https://mazinmunir.com/assets/ecommerce.png">
+
+    <!-- Structured Data JSON-LD for SEO -->
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
@@ -51,1003 +56,820 @@
   }
   </script>
 
-  <!-- Premium Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- FULL PAGE LIVE BACKGROUND CANVAS -->
-  <canvas id="page-bg-canvas"></canvas>
+    <!-- FULL PAGE LIVE BACKGROUND CANVAS -->
+    <canvas id="page-bg-canvas"></canvas>
 
-  <!-- Scroll Progress -->
-  <div id="scroll-progress" class="scroll-progress"></div>
+    <!-- Scroll Progress -->
+    <div id="scroll-progress" class="scroll-progress"></div>
 
-  <!-- Toast Notification System -->
-  <div id="toast-container" class="toast-container"></div>
+    <!-- Toast Notification System -->
+    <div id="toast-container" class="toast-container"></div>
 
-  <!-- STICKY HEADER -->
-  <header class="main-header" id="header">
-    <div class="header-container">
-      <div class="logo" id="logo-trigger">
-        <span class="logo-badge">M</span>
-        <span class="logo-text">mazin<span class="logo-bold">munir</span><span class="logo-domain">.com</span></span>
-      </div>
-      
-      <nav class="desktop-nav">
-        <a href="#about" class="nav-link">The Architect</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#sandbox" class="nav-link">Swarm Studio</a>
-        <a href="#calculator" class="nav-link">ROI Calculator</a>
-        <a href="#team" class="nav-link">Core Team</a>
-        <a href="#cases" class="nav-link">Case Studies</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
+    <!-- STICKY HEADER -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <div class="logo" id="logo-trigger">
+                <span class="logo-badge">M</span>
+                <span class="logo-text">mazin<span class="logo-bold">munir</span><span
+                        class="logo-domain">.com</span></span>
+            </div>
 
-      <div class="header-cta">
-        <a href="#contact" class="btn btn-primary btn-sm">Brief Mazin</a>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Mobile Menu">
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
-        </button>
-      </div>
+            <nav class="desktop-nav">
+                <a href="#about" class="nav-link">The Architect</a>
+                <a href="#services" class="nav-link">Services</a>
+
+                <a href="#calculator" class="nav-link">ROI Calculator</a>
+                <a href="#team" class="nav-link">Core Team</a>
+                <a href="#cases" class="nav-link">Case Studies</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-primary btn-sm">Brief Mazin</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Mobile Menu">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION MENU -->
+    <div class="mobile-nav" id="mobile-nav">
+        <nav class="mobile-links">
+            <a href="#about" class="mobile-link">The Architect</a>
+            <a href="#services" class="mobile-link">Services</a>
+
+            <a href="#calculator" class="mobile-link">ROI Calculator</a>
+            <a href="#team" class="mobile-link">Core Team</a>
+            <a href="#cases" class="mobile-link">Case Studies</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#contact" class="btn btn-primary mobile-btn">Brief Mazin</a>
+        </nav>
     </div>
-  </header>
-
-  <!-- MOBILE NAVIGATION MENU -->
-  <div class="mobile-nav" id="mobile-nav">
-    <nav class="mobile-links">
-      <a href="#about" class="mobile-link">The Architect</a>
-      <a href="#services" class="mobile-link">Services</a>
-      <a href="#sandbox" class="mobile-link">Swarm Studio</a>
-      <a href="#calculator" class="mobile-link">ROI Calculator</a>
-      <a href="#team" class="mobile-link">Core Team</a>
-      <a href="#cases" class="mobile-link">Case Studies</a>
-      <a href="#contact" class="mobile-link">Contact</a>
-      <a href="#contact" class="btn btn-primary mobile-btn">Brief Mazin</a>
-    </nav>
-  </div>
 
 
     <!-- MEET THE ARCHITECT: MAZIN MUNIR -->
-  <section class="about-section" id="about">
-    <div class="section-container">
-      <div class="about-grid">
-        <div class="about-image-side">
-          <div class="image-stack">
-            <!-- Blank Portrait Placeholder Card -->
-            <div class="architect-card glass-panel spotlight-card">
-              <div class="architect-badge">PRINCIPAL ARCHITECT</div>
-              <div class="architect-portrait-placeholder">
-                <span class="placeholder-icon">👤</span>
-                <span class="placeholder-text">Mazin Munir Portrait Slot</span>
-              </div>
-              <div class="architect-info">
-                <h4>Mazin Munir</h4>
-                <p>Lead AI Automation Architect</p>
-                <span class="specialty-tag">&lt; Swarm Intelligence Specialist &gt;</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-content-side">
-          <span class="section-pretitle">THE ARCHITECT</span>
-          <h2 class="section-title">Architecting Custom Autonomous Solutions</h2>
-          <p class="about-lead">I am Mazin Munir. I personally design, model, and oversee the execution of every cognitive swarm architecture that leaves our agency.</p>
-          
-          <div class="about-features-vertical">
-            <div class="about-feature-item">
-              <div class="feature-icon">🧠</div>
-              <div class="feature-detail">
-                <h4>Who I Am</h4>
-                <p>An enterprise AI systems architect focused on multi-agent consensus protocols, deep RAG structures, and highly resilient automation models.</p>
-              </div>
-            </div>
-
-            <div class="about-feature-item">
-              <div class="feature-icon">⚙️</div>
-              <div class="feature-detail">
-                <h4>What I'm Doing</h4>
-                <p>Engineering autonomous meshes that act like digital staff. They scan mailboxes, parse complex invoices, execute validation codes, and keep databases synced in real time.</p>
-              </div>
-            </div>
-
-            <div class="about-feature-item">
-              <div class="feature-icon">🚀</div>
-              <div class="feature-detail">
-                <h4>What I'm Changing</h4>
-                <p>Traditional software integrations are rigid. I am replacing fragile API triggers with self-learning, cognitive agent loops that check their own errors and scale dynamically.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- TRUSTED BY / SOCIAL PROOF / VALUE PROP -->
-  <section class="trust-section">
-    <div class="section-container">
-      <p class="trust-lead">OUR CORE COMPETENCIES & STANDARDS</p>
-      <div class="capabilities-grid">
-        <div class="capability-logo">
-          <svg class="cap-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-          <span>Synchronized Agent Networks</span>
-        </div>
-        <div class="capability-logo">
-          <svg class="cap-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-          <span>Intelligent Information Flows</span>
-        </div>
-        <div class="capability-logo">
-          <svg class="cap-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
-          <span>Bespoke Neural Contexts</span>
-        </div>
-        <div class="capability-logo">
-          <svg class="cap-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-          <span>Synchronous Data Integrity</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- HERO SECTION -->
-  <section class="hero-section" id="hero">
-    <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="pulse-ring"></span>
-          STRATEGIC COGNITIVE SYSTEMS
-        </div>
-        <h1 class="hero-title">
-          Architecting Autonomous <br>
-          <span class="text-gradient">Intelligence</span>
-        </h1>
-        <p class="hero-subtitle">
-          We design bespoke cognitive infrastructure that orchestrates complex business operations, removes operational bottlenecks, and reclaims significant executive capacity.
-        </p>
-        <div class="hero-actions">
-          <a href="#sandbox" class="btn btn-primary">Launch Swarm Sandbox</a>
-          <a href="#contact" class="btn btn-secondary">Request Swarm Audit</a>
-        </div>
-        
-        <div class="hero-stats">
-          <div class="stat-item">
-            <span class="stat-number">20h+</span>
-            <span class="stat-label">Saved per week / worker</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-number">99.8%</span>
-            <span class="stat-label">Data accuracy rate</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-number">10x</span>
-            <span class="stat-label">Workflow velocity boost</span>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Operational Strategy Simulator Widget -->
-      <div class="hero-canvas-container">
-        <div class="canvas-glow"></div>
-        <div class="canvas-card glass-panel" id="blueprint-generator">
-          <div class="canvas-header">
-            <div class="header-dots">
-              <span class="dot-red"></span>
-              <span class="dot-yellow"></span>
-              <span class="dot-green"></span>
-            </div>
-            <span class="canvas-title"><span class="ping-dot-emerald"></span>SWARM_BLUEPRINT_ENGINE</span>
-            <span class="canvas-version">v1.0.8-active</span>
-          </div>
-          
-          <!-- Input View -->
-          <div class="generator-body" id="gen-input-view">
-            <h4>Operational Strategy Simulator</h4>
-            <p class="gen-subtitle">Describe a manual task your team does daily to generate an automated agent workflow recipe.</p>
-            
-            <div class="gen-group">
-              <label for="gen-process-desc">Manual Workflow Description</label>
-              <textarea id="gen-process-desc" rows="3" placeholder="e.g. Extract invoices from client email attachments, check totals in Excel, and sync them to HubSpot database..."></textarea>
-            </div>
-
-            <div class="gen-row">
-              <div class="gen-group flex-1">
-                <div class="label-row">
-                  <label for="gen-hours">Wasted Hours / Week</label>
-                  <span class="gen-val-display" id="gen-hours-val">15 hrs</span>
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-image-side">
+                    <div class="image-stack">
+                        <!-- Blank Portrait Placeholder Card -->
+                        <div class="architect-card glass-panel spotlight-card">
+                            <div class="architect-badge">PRINCIPAL ARCHITECT</div>
+                            <div class="architect-portrait-box">
+                                <img src="assets/f.jpeg" alt="Mazin Munir - Lead AI Automation Architect" class="architect-img">
+                                
+                            </div>
+                            <div class="architect-info">
+                                <h4>Mazin Munir</h4>
+                                <p>Lead AI Automation Architect</p>
+                                <span class="specialty-tag">&lt; Swarm Intelligence Specialist &gt;</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <input type="range" id="gen-hours" min="2" max="40" value="15" class="slider gen-slider">
-              </div>
-            </div>
 
-            <button class="btn btn-primary btn-block" id="btn-generate-blueprint">
-              <span>Generate Operational Blueprint</span>
-              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-            </button>
-          </div>
+                <div class="about-content-side">
+                    <span class="section-pretitle">THE ARCHITECT</span>
+                    <h2 class="section-title">Architecting Custom Autonomous Solutions</h2>
+                    <p class="about-lead">I am Mazin Munir. I personally design, model, and oversee the execution of
+                        every cognitive swarm architecture that leaves our agency.</p>
 
-          <!-- Loading/Processing View (Hidden initially) -->
-          <div class="generator-body gen-hidden" id="gen-loading-view">
-            <div class="gen-loading-center">
-              <div class="gen-spinner"></div>
-              <h5>Analyzing Workflow Parameters</h5>
-              <p class="loading-subtitle">Mapping database schemas and allocating agent instances...</p>
-            </div>
-            <div class="gen-progress-bar-wrap">
-              <div class="gen-progress-bar-fill" id="gen-progress-bar"></div>
-            </div>
-            <div class="gen-loading-console" id="gen-loading-console">
-              <div class="log-entry system-log">&gt; Spawning blueprint parser context...</div>
-            </div>
-          </div>
+                    <div class="about-features-vertical">
+                        <div class="about-feature-item">
+                            <div class="feature-icon">🧠</div>
+                            <div class="feature-detail">
+                                <h4>Who I Am</h4>
+                                <p>An enterprise AI systems architect focused on multi-agent consensus protocols, deep
+                                    RAG structures, and highly resilient automation models.</p>
+                            </div>
+                        </div>
 
-          <!-- Results View (Hidden initially) -->
-          <div class="generator-body gen-hidden" id="gen-result-view">
-            <div class="blueprint-result-header">
-              <span class="result-success-badge">BLUEPRINT COMPILED</span>
-              <button class="btn-reset-gen" id="btn-reset-gen">Reset Form</button>
-            </div>
-            
-            <div class="result-box-grid">
-              <div class="result-box-item">
-                <span class="result-lbl">RECOMMENDED AGENT SWARM</span>
-                <div class="result-swarm-nodes" id="result-nodes-list">
-                  <span class="node-tag color-cyan">Email Scraper</span>
-                  <span class="node-tag color-indigo">LLM Auditor</span>
-                  <span class="node-tag color-emerald">API Sync</span>
+                        <div class="about-feature-item">
+                            <div class="feature-icon">⚙️</div>
+                            <div class="feature-detail">
+                                <h4>What I'm Doing</h4>
+                                <p>Engineering autonomous meshes that act like digital staff. They scan mailboxes, parse
+                                    complex invoices, execute validation codes, and keep databases synced in real time.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature-item">
+                            <div class="feature-icon">🚀</div>
+                            <div class="feature-detail">
+                                <h4>What I'm Changing</h4>
+                                <p>Traditional software integrations are rigid. I am replacing fragile API triggers with
+                                    self-learning, cognitive agent loops that check their own errors and scale
+                                    dynamically.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              
-              <div class="result-stats-row">
-                <div class="result-stat-card">
-                  <span class="result-lbl">EST. ANNUAL SAVINGS</span>
-                  <span class="result-num-highlight" id="result-savings-cash">$23,400</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TRUSTED BY / SOCIAL PROOF / VALUE PROP -->
+    <section class="trust-section">
+        <div class="section-container">
+            <p class="trust-lead">OUR CORE COMPETENCIES & STANDARDS</p>
+            <div class="capabilities-grid">
+                <div class="capability-logo">
+                    <svg class="cap-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <span>Synchronized Agent Networks</span>
                 </div>
-                <div class="result-stat-card">
-                  <span class="result-lbl">ROI RATING</span>
-                  <span class="result-num-highlight color-green" id="result-roi-rating">92% ROI</span>
+                <div class="capability-logo">
+                    <svg class="cap-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                        </path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                    <span>Intelligent Information Flows</span>
                 </div>
-              </div>
-              
-              <div class="result-recipe-box">
-                <span class="result-lbl">CUSTOM AUTOMATION RECIPE</span>
-                <p id="result-recipe-text">Swarm [Email Scraper] extracts files -> Swarm [LLM Auditor] audits schema -> Swarm [API Sync] writes outputs.</p>
-              </div>
-            </div>
-
-            <button class="btn btn-primary btn-block" id="btn-deploy-blueprint">
-              <span>Deploy this Swarm with Mazin</span>
-              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-
-  <!-- SERVICES SECTION -->
-  <section class="services-section" id="services">
-    <div class="section-container">
-      <div class="section-header">
-        <span class="section-pretitle">OUR SERVICE OFFERINGS</span>
-        <h2 class="section-title">Engineered to Automate the Repetitive</h2>
-        <p class="section-desc">We build autonomous software ecosystems that behave like highly trained employees, communicating amongst themselves to complete complex processes end-to-end.</p>
-      </div>
-
-      <div class="services-grid">
-        <!-- Service Card 1 -->
-        <div class="service-card">
-          <div class="service-icon-box">
-            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-          </div>
-          <h3>Autonomous Swarms</h3>
-          <p>Multi-agent frameworks that self-organize, divide tasks, fact-check each other's outputs, and deliver high-precision results without human bottlenecks.</p>
-          <ul class="service-bullets">
-            <li>Refined consensus protocols</li>
-            <li>Self-correcting code execution</li>
-            <li>Cross-verification loops</li>
-          </ul>
-        </div>
-
-        <!-- Service Card 2 -->
-        <div class="service-card">
-          <div class="service-icon-box">
-            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>
-          </div>
-          <h3>Cognitive Database Sync</h3>
-          <p>Connect silos, clean raw spreadsheets, and orchestrate real-time synchronization between CRM networks, ERP layers, and operational databases.</p>
-          <ul class="service-bullets">
-            <li>AI-driven schema mapping</li>
-            <li>Anomalous log alerts</li>
-            <li>Zero-latency API bridges</li>
-          </ul>
-        </div>
-
-        <!-- Service Card 3 -->
-        <div class="service-card">
-          <div class="service-icon-box">
-            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-          </div>
-          <h3>Custom LLM Orchestrator</h3>
-          <p>Bespoke models fine-tuned with your proprietary business manuals and documentation, automating research audits and complex document triage.</p>
-          <ul class="service-bullets">
-            <li>Deep semantic indexing</li>
-            <li>Custom guardrails & filters</li>
-            <li>Agentic tool usage (RAG)</li>
-          </ul>
-        </div>
-
-        <!-- Service Card 4 -->
-        <div class="service-card">
-          <div class="service-icon-box">
-            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-          </div>
-          <h3>Process Audits & Architecture</h3>
-          <p>We trace your operations step-by-step, draft a detailed automation architecture blueprint, and outline your path to hands-off operations.</p>
-          <ul class="service-bullets">
-            <li>Detailed ROI forecasting</li>
-            <li>Bottleneck identification</li>
-            <li>Tech stack auditing</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INTERACTIVE SWARM SANDBOX -->
-  <section class="sandbox-section" id="sandbox">
-    <div class="section-container full-width-container">
-      <div class="section-header">
-        <span class="section-pretitle">INTERACTIVE WORKSPACE</span>
-        <h2 class="section-title">Swarm Architect Studio</h2>
-        <p class="section-desc">Design custom AI agent swarms. Click to add triggers, LLM brains, integrations, and human gates to map out, simulate, and calculate the exact ROI of your automated business workflows.</p>
-      </div>
-
-      <!-- Studio Dashboard Layout -->
-      <div class="studio-dashboard glass-panel">
-        
-        <!-- Top Preset Bar -->
-        <div class="studio-top-bar">
-          <div class="presets-label">
-            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            <span>Swarm Templates:</span>
-          </div>
-          <div class="preset-buttons">
-            <button class="btn-preset active" data-preset="lead-gen">Lead Enrichment Swarm</button>
-            <button class="btn-preset" data-preset="invoice-audit">Invoice Reconciliation</button>
-            <button class="btn-preset" data-preset="customer-support">Customer Support Triage</button>
-            <button class="btn-preset" data-preset="clear">Clear Studio Grid</button>
-          </div>
-        </div>
-
-        <div class="studio-main-grid">
-          <!-- Left Sidebar: Toolbox -->
-          <div class="studio-toolbox">
-            <h3>Agent Toolbox</h3>
-            <p class="toolbox-info">Click to add nodes to the canvas. Drag nodes to move, and drag between connection ports (o) to wire them.</p>
-            
-            <div class="toolbox-category">
-              <span class="category-title">1. TRIGGERS</span>
-              <div class="toolbox-items">
-                <div class="toolbox-node-btn" data-type="trigger" data-template="email-watcher">
-                  <span class="node-icon icon-trigger">✉️</span>
-                  <div class="node-meta">
-                    <span class="node-name">Email Listener</span>
-                    <span class="node-desc">Polls mailbox for attachments</span>
-                  </div>
+                <div class="capability-logo">
+                    <svg class="cap-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="9" y1="3" x2="9" y2="21"></line>
+                    </svg>
+                    <span>Bespoke Neural Contexts</span>
                 </div>
-                <div class="toolbox-node-btn" data-type="trigger" data-template="webhook-listener">
-                  <span class="node-icon icon-trigger">🌐</span>
-                  <div class="node-meta">
-                    <span class="node-name">Webhook Receiver</span>
-                    <span class="node-desc">Listens to external system events</span>
-                  </div>
+                <div class="capability-logo">
+                    <svg class="cap-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>Synchronous Data Integrity</span>
                 </div>
-                <div class="toolbox-node-btn" data-type="trigger" data-template="scheduled-cron">
-                  <span class="node-icon icon-trigger">⏱️</span>
-                  <div class="node-meta">
-                    <span class="node-name">Scheduled Trigger</span>
-                    <span class="node-desc">Runs at a set time interval</span>
-                  </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-ring"></span>
+                    STRATEGIC COGNITIVE SYSTEMS
                 </div>
-              </div>
-            </div>
-
-            <div class="toolbox-category">
-              <span class="category-title">2. COGNITIVE AGENTS</span>
-              <div class="toolbox-items">
-                <div class="toolbox-node-btn" data-type="agent" data-template="llm-classifier">
-                  <span class="node-icon icon-agent">🧠</span>
-                  <div class="node-meta">
-                    <span class="node-name">LLM Classifier</span>
-                    <span class="node-desc">Segments tasks and routes data</span>
-                  </div>
+                <h1 class="hero-title">
+                    Architecting Autonomous <br>
+                    <span class="text-gradient">Intelligence</span>
+                </h1>
+                <p class="hero-subtitle">
+                    We design bespoke cognitive infrastructure that orchestrates complex business operations, removes
+                    operational bottlenecks, and reclaims significant executive capacity.
+                </p>
+                <div class="hero-actions">
+                    <a href="#sandbox" class="btn btn-primary">Launch Swarm Sandbox</a>
+                    <a href="#contact" class="btn btn-secondary">Request Swarm Audit</a>
                 </div>
-                <div class="toolbox-node-btn" data-type="agent" data-template="pdf-parser">
-                  <span class="node-icon icon-agent">📄</span>
-                  <div class="node-meta">
-                    <span class="node-name">Document OCR</span>
-                    <span class="node-desc">Extracts key data from PDF/Images</span>
-                  </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">20h+</span>
+                        <span class="stat-label">Saved per week / worker</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">99.8%</span>
+                        <span class="stat-label">Data accuracy rate</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">10x</span>
+                        <span class="stat-label">Workflow velocity boost</span>
+                    </div>
                 </div>
-                <div class="toolbox-node-btn" data-type="agent" data-template="web-scraper">
-                  <span class="node-icon icon-agent">🕷️</span>
-                  <div class="node-meta">
-                    <span class="node-name">Web Scraper</span>
-                    <span class="node-desc">Gathers text and listings online</span>
-                  </div>
+            </div>
+
+            <!-- Operational Strategy Simulator Widget -->
+            <div class="hero-canvas-container">
+                <div class="canvas-glow"></div>
+                <div class="canvas-card glass-panel" id="blueprint-generator">
+                    <div class="canvas-header">
+                        <div class="header-dots">
+                            <span class="dot-red"></span>
+                            <span class="dot-yellow"></span>
+                            <span class="dot-green"></span>
+                        </div>
+                        <span class="canvas-title"><span class="ping-dot-emerald"></span>SWARM_BLUEPRINT_ENGINE</span>
+                        <span class="canvas-version">v1.0.8-active</span>
+                    </div>
+
+                    <!-- Input View -->
+                    <div class="generator-body" id="gen-input-view">
+                        <h4>Operational Strategy Simulator</h4>
+                        <p class="gen-subtitle">Describe a manual task your team does daily to generate an automated
+                            agent workflow recipe.</p>
+
+                        <div class="gen-group">
+                            <label for="gen-process-desc">Manual Workflow Description</label>
+                            <textarea id="gen-process-desc" rows="3"
+                                placeholder="e.g. Extract invoices from client email attachments, check totals in Excel, and sync them to HubSpot database..."></textarea>
+                        </div>
+
+                        <div class="gen-row">
+                            <div class="gen-group flex-1">
+                                <div class="label-row">
+                                    <label for="gen-hours">Wasted Hours / Week</label>
+                                    <span class="gen-val-display" id="gen-hours-val">15 hrs</span>
+                                </div>
+                                <input type="range" id="gen-hours" min="2" max="40" value="15"
+                                    class="slider gen-slider">
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block" id="btn-generate-blueprint">
+                            <span>Generate Operational Blueprint</span>
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Loading/Processing View (Hidden initially) -->
+                    <div class="generator-body gen-hidden" id="gen-loading-view">
+                        <div class="gen-loading-center">
+                            <div class="gen-spinner"></div>
+                            <h5>Analyzing Workflow Parameters</h5>
+                            <p class="loading-subtitle">Mapping database schemas and allocating agent instances...</p>
+                        </div>
+                        <div class="gen-progress-bar-wrap">
+                            <div class="gen-progress-bar-fill" id="gen-progress-bar"></div>
+                        </div>
+                        <div class="gen-loading-console" id="gen-loading-console">
+                            <div class="log-entry system-log">&gt; Spawning blueprint parser context...</div>
+                        </div>
+                    </div>
+
+                    <!-- Results View (Hidden initially) -->
+                    <div class="generator-body gen-hidden" id="gen-result-view">
+                        <div class="blueprint-result-header">
+                            <span class="result-success-badge">BLUEPRINT COMPILED</span>
+                            <button class="btn-reset-gen" id="btn-reset-gen">Reset Form</button>
+                        </div>
+
+                        <div class="result-box-grid">
+                            <div class="result-box-item">
+                                <span class="result-lbl">RECOMMENDED AGENT SWARM</span>
+                                <div class="result-swarm-nodes" id="result-nodes-list">
+                                    <span class="node-tag color-cyan">Email Scraper</span>
+                                    <span class="node-tag color-indigo">LLM Auditor</span>
+                                    <span class="node-tag color-emerald">API Sync</span>
+                                </div>
+                            </div>
+
+                            <div class="result-stats-row">
+                                <div class="result-stat-card">
+                                    <span class="result-lbl">EST. ANNUAL SAVINGS</span>
+                                    <span class="result-num-highlight" id="result-savings-cash">$23,400</span>
+                                </div>
+                                <div class="result-stat-card">
+                                    <span class="result-lbl">ROI RATING</span>
+                                    <span class="result-num-highlight color-green" id="result-roi-rating">92% ROI</span>
+                                </div>
+                            </div>
+
+                            <div class="result-recipe-box">
+                                <span class="result-lbl">CUSTOM AUTOMATION RECIPE</span>
+                                <p id="result-recipe-text">Swarm [Email Scraper] extracts files -> Swarm [LLM Auditor]
+                                    audits schema -> Swarm [API Sync] writes outputs.</p>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block" id="btn-deploy-blueprint">
+                            <span>Deploy this Swarm with Mazin</span>
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-              </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-pretitle">OUR SERVICE OFFERINGS</span>
+                <h2 class="section-title">Engineered to Automate the Repetitive</h2>
+                <p class="section-desc">We build autonomous software ecosystems that behave like highly trained
+                    employees, communicating amongst themselves to complete complex processes end-to-end.</p>
             </div>
 
-            <div class="toolbox-category">
-              <span class="category-title">3. INTEGRATIONS</span>
-              <div class="toolbox-items">
-                <div class="toolbox-node-btn" data-type="integration" data-template="crm-sync">
-                  <span class="node-icon icon-integration">💼</span>
-                  <div class="node-meta">
-                    <span class="node-name">CRM Sync Agent</span>
-                    <span class="node-desc">Writes to HubSpot/Salesforce</span>
-                  </div>
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Autonomous Swarms</h3>
+                    <p>Multi-agent frameworks that self-organize, divide tasks, fact-check each other's outputs, and
+                        deliver high-precision results without human bottlenecks.</p>
+                    <ul class="service-bullets">
+                        <li>Refined consensus protocols</li>
+                        <li>Self-correcting code execution</li>
+                        <li>Cross-verification loops</li>
+                    </ul>
                 </div>
-                <div class="toolbox-node-btn" data-type="integration" data-template="db-porter">
-                  <span class="node-icon icon-integration">🗄️</span>
-                  <div class="node-meta">
-                    <span class="node-name">SQL Database Sync</span>
-                    <span class="node-desc">Queries & writes database tables</span>
-                  </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" y1="9" x2="20" y2="9"></line>
+                            <line x1="4" y1="15" x2="20" y2="15"></line>
+                            <line x1="10" y1="3" x2="8" y2="21"></line>
+                            <line x1="16" y1="3" x2="14" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Cognitive Database Sync</h3>
+                    <p>Connect silos, clean raw spreadsheets, and orchestrate real-time synchronization between CRM
+                        networks, ERP layers, and operational databases.</p>
+                    <ul class="service-bullets">
+                        <li>AI-driven schema mapping</li>
+                        <li>Anomalous log alerts</li>
+                        <li>Zero-latency API bridges</li>
+                    </ul>
                 </div>
-                <div class="toolbox-node-btn" data-type="integration" data-template="email-sender">
-                  <span class="node-icon icon-integration">📤</span>
-                  <div class="node-meta">
-                    <span class="node-name">Email Sender</span>
-                    <span class="node-desc">Drafts and dispatches emails</span>
-                  </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Custom LLM Orchestrator</h3>
+                    <p>Bespoke models fine-tuned with your proprietary business manuals and documentation, automating
+                        research audits and complex document triage.</p>
+                    <ul class="service-bullets">
+                        <li>Deep semantic indexing</li>
+                        <li>Custom guardrails & filters</li>
+                        <li>Agentic tool usage (RAG)</li>
+                    </ul>
                 </div>
-                <div class="toolbox-node-btn" data-type="integration" data-template="slack-notifier">
-                  <span class="node-icon icon-integration">💬</span>
-                  <div class="node-meta">
-                    <span class="node-name">Slack Alerts</span>
-                    <span class="node-desc">Sends channel alerts & reports</span>
-                  </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Process Audits & Architecture</h3>
+                    <p>We trace your operations step-by-step, draft a detailed automation architecture blueprint, and
+                        outline your path to hands-off operations.</p>
+                    <ul class="service-bullets">
+                        <li>Detailed ROI forecasting</li>
+                        <li>Bottleneck identification</li>
+                        <li>Tech stack auditing</li>
+                    </ul>
                 </div>
-              </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ROI CALCULATOR -->
+    <section class="calculator-section" id="calculator">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-pretitle">ROI ASSESSMENT</span>
+                <h2 class="section-title">Calculate Your Automation Savings</h2>
+                <p class="section-desc">Repetitive admin tasks leak margins every day. Slide the parameters to estimate
+                    the time and cost reclaimed by moving to a custom Agent Swarm model.</p>
             </div>
 
-            <div class="toolbox-category">
-              <span class="category-title">4. GATEWAYS</span>
-              <div class="toolbox-items">
-                <div class="toolbox-node-btn" data-type="gateway" data-template="human-in-loop">
-                  <span class="node-icon icon-gateway">👤</span>
-                  <div class="node-meta">
-                    <span class="node-name">Human Gatekeeper</span>
-                    <span class="node-desc">Halts for manual validation/edit</span>
-                  </div>
+            <div class="calculator-grid">
+                <!-- Input Panel -->
+                <div class="calculator-inputs glass-panel">
+                    <h3>Workforce Parameters</h3>
+
+                    <div class="input-group">
+                        <div class="input-labels">
+                            <span class="input-label">Repetitive Employees</span>
+                            <span class="input-value" id="val-employees">5</span>
+                        </div>
+                        <input type="range" id="input-employees" min="1" max="100" value="5" class="slider">
+                        <span class="range-subtext">Number of team members performing repetitive database,
+                            administrative, or research tasks.</span>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-labels">
+                            <span class="input-label">Wasted Hours / Week (per employee)</span>
+                            <span class="input-value" id="val-hours">15</span>
+                        </div>
+                        <input type="range" id="input-hours" min="2" max="40" value="15" class="slider">
+                        <span class="range-subtext">Estimated time spent per worker each week on manual data entry,
+                            scraping, and copy-paste.</span>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-labels">
+                            <span class="input-label">Average Hourly Employee Cost</span>
+                            <span class="input-value" id="val-wage">$30</span>
+                        </div>
+                        <input type="range" id="input-wage" min="15" max="150" value="30" class="slider">
+                        <span class="range-subtext">Fully burdened hourly cost including base wage, taxes, benefits, and
+                            software overhead.</span>
+                    </div>
                 </div>
-              </div>
+
+                <!-- Output Panel -->
+                <div class="calculator-outputs">
+                    <div class="output-card bg-highlight">
+                        <span class="output-pre">WEEKLY TIME RECLAIMED</span>
+                        <div class="output-number" id="calc-hours-saved">75 hrs</div>
+                        <p class="output-desc">Equivalent to adding <span class="text-bold" id="calc-fte">1.9 full-time
+                                employees</span> of production capacity without hiring overhead.</p>
+                    </div>
+
+                    <div class="outputs-row">
+                        <div class="output-card glass-panel">
+                            <span class="output-pre">MONTHLY SAVINGS</span>
+                            <div class="output-number small-val" id="calc-monthly-cash">$9,000</div>
+                            <p class="output-desc">Recovered operational leakage.</p>
+                        </div>
+                        <div class="output-card glass-panel">
+                            <span class="output-pre">ANNUALIZED IMPACT</span>
+                            <div class="output-number small-val color-indigo" id="calc-annual-cash">$108,000</div>
+                            <p class="output-desc">Ready to reinvest in core growth.</p>
+                        </div>
+                    </div>
+
+                    <div class="calc-cta-box">
+                        <div class="cta-bullet">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="cta-tick">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Custom agent swarms deploy in 3-5 weeks</span>
+                        </div>
+                        <div class="cta-bullet">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="cta-tick">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Fully integrates with Slack, Salesforce, Excel, HubSpot & internal APIs</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-block cta-btn">Claim My Automation Blueprint</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE TEAM -->
+    <section class="team-section" id="team">
+        <div class="section-container">
+            <div class="team-grid-layout">
+                <div class="team-content-side">
+                    <span class="section-pretitle">THE DELIVERY CORE</span>
+                    <h2 class="section-title">My Elite Engineering Team</h2>
+                    <p class="team-lead">I personally lead the strategy and design, but scaling enterprise automation
+                        requires specialized depth.</p>
+                    <p class="team-text">
+                        Behind my architectural designs is a hand-picked, elite engineering team of machine learning
+                        researchers, database specialists, and integration developers.
+                    </p>
+                    <p class="team-text">
+                        While I remain your single point of contact and inspect every line of core logic, this team
+                        ensures we deliver enterprise-grade performance, bank-level security compliance, and robust API
+                        scaling protocols.
+                    </p>
+                    <div class="team-standards">
+                        <div class="standard-pill"><span>🔒 HIPAA & SOC2 Ready</span></div>
+                        <div class="standard-pill"><span>⚡ 24h Fail-Safe Checks</span></div>
+                        <div class="standard-pill"><span>🛠️ Clean Code Audits</span></div>
+                    </div>
+                </div>
+
+                <div class="team-image-side">
+                    <div class="team-photo-placeholder">
+                        <span class="placeholder-icon">👥</span>
+                        <span class="placeholder-text">Swarm Core Team Image Slot</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section class="cases-section" id="cases">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-pretitle">PROVEN IMPACT</span>
+                <h2 class="section-title">Automations Running in Production</h2>
+                <p class="section-desc">Explore brief details of how our custom-engineered systems transform manual
+                    workflows into optimized assets.</p>
             </div>
 
-          </div>
+            <div class="cases-grid">
+                <!-- Case Card 1 -->
+                <div class="case-card glass-panel">
+                    <div class="case-image-wrap">
+                        <img src="assets/ecommerce.png" alt="E-Commerce Inventory Auto-Sync Swarm Mockup"
+                            loading="lazy">
+                    </div>
+                    <div class="case-card-body">
+                        <div class="case-badge">E-COMMERCE & RETAIL</div>
+                        <h3>E-Commerce Inventory Auto-Sync Swarm</h3>
+                        <p class="case-summary">Engineered a multi-agent system that monitors stock changes, validates
+                            description schemas, and synchronizes product listings across Shopify, Amazon, and central
+                            ERP portals.</p>
+                        <div class="case-metrics">
+                            <div class="metric">
+                                <span class="metric-num">99.9%</span>
+                                <span class="metric-lbl">Sync accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-num">20 hrs</span>
+                                <span class="metric-lbl">Saved per week</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- Middle: Canvas Viewport -->
-          <div class="studio-canvas-container" id="studio-canvas-container">
-            <div class="canvas-grid-bg"></div>
-            
-            <!-- SVG Overlay for Cables and particle animations -->
-            <svg class="canvas-svg-overlay" id="canvas-svg-overlay"></svg>
-            
-            <!-- DOM Nodes wrapper -->
-            <div class="canvas-nodes-wrap" id="canvas-nodes-wrap">
-              <!-- Nodes are dynamically populated here -->
+                <!-- Case Card 2 -->
+                <div class="case-card glass-panel">
+                    <div class="case-image-wrap">
+                        <img src="assets/real_estate.png" alt="Real Estate Acquisition Swarm Mockup" loading="lazy">
+                    </div>
+                    <div class="case-card-body">
+                        <div class="case-badge">REAL ESTATE TECH</div>
+                        <h3>Real Estate Lead Acquisition Swarm</h3>
+                        <p class="case-summary">Developed a custom web agent network that crawls listings, qualifies
+                            property variables using LLM valuation models, and drafts personalized outreach templates.
+                        </p>
+                        <div class="case-metrics">
+                            <div class="metric">
+                                <span class="metric-num">14x</span>
+                                <span class="metric-lbl">Outreach volume</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-num">1.2 min</span>
+                                <span class="metric-lbl">Cycle duration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Card 3 -->
+                <div class="case-card glass-panel">
+                    <div class="case-image-wrap">
+                        <img src="assets/healthcare.png" alt="Healthcare Document Parsing Swarm Mockup" loading="lazy">
+                    </div>
+                    <div class="case-card-body">
+                        <div class="case-badge">HEALTHCARE & COMPLIANCE</div>
+                        <h3>Healthcare Document Routing Swarm</h3>
+                        <p class="case-summary">Designed a secure document parsing swarm that extracts medical charts,
+                            audits records against compliance schemas, and automatically updates EHR endpoints.</p>
+                        <div class="case-metrics">
+                            <div class="metric">
+                                <span class="metric-num">95%</span>
+                                <span class="metric-lbl">Audit speedup</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-num">0%</span>
+                                <span class="metric-lbl">Compliance leaks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="viewport-overlay-labels">
-              <span class="label-running-status" id="simulation-status-label">SYS_IDLE</span>
-              <span class="label-speed">TICK RATE: 60Hz</span>
-            </div>
-          </div>
         </div>
+    </section>
 
-        <!-- Sleek Property Configuration Drawer (Initially closed) -->
-        <div class="node-properties-drawer" id="node-properties-drawer">
-          <div class="drawer-header">
-            <h4>Node Settings</h4>
-            <button class="btn-close-drawer" id="btn-close-drawer">&times;</button>
-          </div>
-          <div class="drawer-body">
-            <input type="hidden" id="prop-node-id">
-            <div class="drawer-group">
-              <label for="prop-node-name">Node Label</label>
-              <input type="text" id="prop-node-name" class="custom-input">
-            </div>
-            <div class="drawer-group" id="drawer-group-model">
-              <label for="prop-node-model">Cognitive Engine (LLM)</label>
-              <select id="prop-node-model" class="custom-select">
-                <option value="claude-3-5">Claude 3.5 Sonnet (DeepMind Rec.)</option>
-                <option value="gpt-4o">GPT-4o (Multimodal Standard)</option>
-                <option value="deepseek-v3">DeepSeek-V3 (Analytical Engine)</option>
-                <option value="haiku-3-5">Claude 3.5 Haiku (Fast Logic)</option>
-              </select>
-            </div>
-            <div class="drawer-group">
-              <label for="prop-node-desc">System Guidelines / Prompts</label>
-              <textarea id="prop-node-desc" rows="4" class="custom-input" placeholder="e.g. Extract invoice total and tax fields, then validate they sum correctly..."></textarea>
-            </div>
-            <button class="btn btn-primary btn-block" id="btn-save-properties">Save Parameters</button>
-            <button class="btn btn-secondary btn-block text-red" id="btn-delete-node" style="margin-top: 10px; border-color: rgba(239, 68, 68, 0.2); color: #ef4444;">Delete Node</button>
-          </div>
-        </div>
-
-        <!-- Bottom Panel: Simulation Controls & Telemetry Dashboard & Logs -->
-        <div class="studio-bottom-panel">
-          
-          <div class="simulation-controls">
-            <button id="run-simulation-btn" class="btn btn-primary">
-              <span>Execute Swarm Run</span>
-              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-            </button>
-            <button id="btn-compile-blueprint" class="btn btn-secondary">
-              <span>Compile Proposal Blueprint</span>
-              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-            </button>
-          </div>
-
-          <div class="studio-dashboard-grid">
-            <!-- Telemetry Metrics Card -->
-            <div class="telemetry-dashboard glass-panel">
-              <div class="metric-card">
-                <span class="metric-label">EST. EXECUTION TIME</span>
-                <span class="metric-val" id="metric-time">0.0s</span>
-                <span class="metric-sub">vs <span id="metric-manual-time">0.0h</span> manual work</span>
-              </div>
-              <div class="metric-divider"></div>
-              <div class="metric-card">
-                <span class="metric-label">SWARM RUN COST</span>
-                <span class="metric-val" id="metric-cost">$0.00</span>
-                <span class="metric-sub">based on token weights</span>
-              </div>
-              <div class="metric-divider"></div>
-              <div class="metric-card">
-                <span class="metric-label">ACCURACY COEFFICIENT</span>
-                <span class="metric-val" id="metric-accuracy">0%</span>
-                <span class="metric-sub" id="metric-accuracy-sub">Ready to test</span>
-              </div>
-              <div class="metric-divider"></div>
-              <div class="metric-card">
-                <span class="metric-label">EST. ANNUALIZED ROI</span>
-                <span class="metric-val text-gradient" id="metric-roi">0%</span>
-                <span class="metric-sub" id="metric-roi-cash">Reclaims $0/year</span>
-              </div>
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-pretitle">SOCIAL PROOF</span>
+                <h2 class="section-title">Vetted by Operations & Tech Leaders</h2>
+                <p class="section-desc">Hear from the executives and operations managers who deployed our custom agent
+                    swarms to reclaim capacity.</p>
             </div>
 
-            <!-- Terminal Logger Box -->
-            <div class="console-log-box">
-              <div class="console-header">
-                <span class="console-title"><span class="console-pulse"></span>SWARM TELEMETRY STREAMS</span>
-                <button class="btn-clear-logs" id="clear-logs-btn">Clear Logs</button>
-              </div>
-              <div class="console-output" id="console-output">
-                <div class="log-entry system-log">&gt;&gt; Swarm Architect Studio initialised. Select nodes and click "Execute Swarm Run".</div>
-              </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-panel">
+                    <div class="testimonial-rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Mazin's team built a cognitive dispatch swarm that automated our routing workflow. We reclaimed
+                        18 hours per dispatcher weekly. The ROI was clear in less than 30 days."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar bg-violet">SJ</div>
+                        <div class="author-info">
+                            <h4>Sarah Jenkins</h4>
+                            <p>COO, ScaleFlow Logistics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-panel">
+                    <div class="testimonial-rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "The Invoice Reconciliation system Mazin deployed has cut our weekly auditing cycle from 24
+                        hours to under 3 minutes. The compliance checks are virtually bulletproof."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar bg-cyan">MC</div>
+                        <div class="author-info">
+                            <h4>Marcus Chen</h4>
+                            <p>VP of Operations, FinTech Capital</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-panel">
+                    <div class="testimonial-rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Before Mazin, our sales team spent hours manually scraping LinkedIn and copying contacts to
+                        HubSpot. The Lead Gen Swarm now does it automatically with semantic screening."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar bg-emerald">ER</div>
+                        <div class="author-info">
+                            <h4>Elena Rostova</h4>
+                            <p>Director of Sales Ops, SaaSify</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
         </div>
+    </section>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- ROI CALCULATOR -->
-  <section class="calculator-section" id="calculator">
-    <div class="section-container">
-      <div class="section-header">
-        <span class="section-pretitle">ROI ASSESSMENT</span>
-        <h2 class="section-title">Calculate Your Automation Savings</h2>
-        <p class="section-desc">Repetitive admin tasks leak margins every day. Slide the parameters to estimate the time and cost reclaimed by moving to a custom Agent Swarm model.</p>
-      </div>
-
-      <div class="calculator-grid">
-        <!-- Input Panel -->
-        <div class="calculator-inputs glass-panel">
-          <h3>Workforce Parameters</h3>
-          
-          <div class="input-group">
-            <div class="input-labels">
-              <span class="input-label">Repetitive Employees</span>
-              <span class="input-value" id="val-employees">5</span>
+    <!-- CONTACT / BRIEFING FORM -->
+    <section class="contact-section" id="contact">
+        <div class="section-container contact-box glass-panel">
+            <div class="contact-header">
+                <span class="contact-alert"><span class="pulse-emerald"></span>INBOX OPEN FOR B2B BRIEFINGS</span>
+                <h2>Initiate Operational Alignment</h2>
+                <p>Brief Mazin Munir and our core team. We will review your current systems and draft a customized
+                    automation roadmap for your company.</p>
             </div>
-            <input type="range" id="input-employees" min="1" max="100" value="5" class="slider">
-            <span class="range-subtext">Number of team members performing repetitive database, administrative, or research tasks.</span>
-          </div>
 
-          <div class="input-group">
-            <div class="input-labels">
-              <span class="input-label">Wasted Hours / Week (per employee)</span>
-              <span class="input-value" id="val-hours">15</span>
+            <form class="contact-form" id="agency-contact-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-name">Your Name *</label>
+                        <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                        <span class="error-message" id="error-name">Please enter your name</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-company">Company Name *</label>
+                        <input type="text" id="contact-company" name="company" placeholder="Acme Corp" required>
+                        <span class="error-message" id="error-company">Please enter your company name</span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-email">Work Email *</label>
+                        <input type="email" id="contact-email" name="email" placeholder="john@company.com" required>
+                        <span class="error-message" id="error-email">Please enter a valid work email</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-service">Target Automation Focus</label>
+                        <select id="contact-service" name="service" class="custom-select form-select">
+                            <option value="swarms">Multi-Agent Swarm Workflows</option>
+                            <option value="data-sync">Cognitive Data & Spreadsheet Sync</option>
+                            <option value="custom-llm">Bespoke LLM / RAG Integrations</option>
+                            <option value="audit">Comprehensive Process Audit</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Workflow Details / Bottlenecks *</label>
+                    <textarea id="contact-message" name="message" rows="4"
+                        placeholder="Describe the manual work your team does daily that you'd like to automate..."
+                        required></textarea>
+                    <span class="error-message" id="error-message">Please share some workflow details</span>
+                </div>
+
+                <div class="form-footer">
+                    <p class="form-privacy-note">
+                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" class="privacy-lock">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        We enforce complete NDA protocols. Your details are secure.
+                    </p>
+                    <button type="submit" class="btn btn-primary" id="btn-submit">
+                        <span>Send Briefing Request</span>
+                        <svg class="submit-arrow" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor"
+                            stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="section-container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-badge">M</span>
+                    <span class="logo-text">mazin<span class="logo-bold">munir</span><span
+                            class="logo-domain">.com</span></span>
+                </div>
+                <p class="footer-tagline-text">Custom Multi-Agent Workflows & High-Precision B2B Automation Systems.</p>
+                <span class="copyright">&copy; 2026 mazinmunir.com. All rights reserved.</span>
             </div>
-            <input type="range" id="input-hours" min="2" max="40" value="15" class="slider">
-            <span class="range-subtext">Estimated time spent per worker each week on manual data entry, scraping, and copy-paste.</span>
-          </div>
 
-          <div class="input-group">
-            <div class="input-labels">
-              <span class="input-label">Average Hourly Employee Cost</span>
-              <span class="input-value" id="val-wage">$30</span>
+            <div class="footer-links-group">
+                <div class="footer-links">
+                    <h4>Capabilities</h4>
+                    <a href="#services">Autonomous Swarms</a>
+                    <a href="#services">Database Synchronization</a>
+                    <a href="#services">Context-Aware LLMs</a>
+                    <a href="#services">Process Blueprints</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Interactive</h4>
+                    <a href="#sandbox">Agent Sandbox</a>
+                    <a href="#calculator">ROI Estimates</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact & Info</h4>
+                    <a href="#about">Mazin Munir Profile</a>
+                    <a href="#contact">Direct Inquiry</a>
+                    <a href="mailto:mazin@mazinmunir.com">mazin@mazinmunir.com</a>
+                </div>
             </div>
-            <input type="range" id="input-wage" min="15" max="150" value="30" class="slider">
-            <span class="range-subtext">Fully burdened hourly cost including base wage, taxes, benefits, and software overhead.</span>
-          </div>
         </div>
+    </footer>
 
-        <!-- Output Panel -->
-        <div class="calculator-outputs">
-          <div class="output-card bg-highlight">
-            <span class="output-pre">WEEKLY TIME RECLAIMED</span>
-            <div class="output-number" id="calc-hours-saved">75 hrs</div>
-            <p class="output-desc">Equivalent to adding <span class="text-bold" id="calc-fte">1.9 full-time employees</span> of production capacity without hiring overhead.</p>
-          </div>
-
-          <div class="outputs-row">
-            <div class="output-card glass-panel">
-              <span class="output-pre">MONTHLY SAVINGS</span>
-              <div class="output-number small-val" id="calc-monthly-cash">$9,000</div>
-              <p class="output-desc">Recovered operational leakage.</p>
-            </div>
-            <div class="output-card glass-panel">
-              <span class="output-pre">ANNUALIZED IMPACT</span>
-              <div class="output-number small-val color-indigo" id="calc-annual-cash">$108,000</div>
-              <p class="output-desc">Ready to reinvest in core growth.</p>
-            </div>
-          </div>
-
-          <div class="calc-cta-box">
-            <div class="cta-bullet">
-              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="cta-tick"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Custom agent swarms deploy in 3-5 weeks</span>
-            </div>
-            <div class="cta-bullet">
-              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="cta-tick"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Fully integrates with Slack, Salesforce, Excel, HubSpot & internal APIs</span>
-            </div>
-            <a href="#contact" class="btn btn-primary btn-block cta-btn">Claim My Automation Blueprint</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- THE TEAM -->
-  <section class="team-section" id="team">
-    <div class="section-container">
-      <div class="team-grid-layout">
-        <div class="team-content-side">
-          <span class="section-pretitle">THE DELIVERY CORE</span>
-          <h2 class="section-title">My Elite Engineering Team</h2>
-          <p class="team-lead">I personally lead the strategy and design, but scaling enterprise automation requires specialized depth.</p>
-          <p class="team-text">
-            Behind my architectural designs is a hand-picked, elite engineering team of machine learning researchers, database specialists, and integration developers. 
-          </p>
-          <p class="team-text">
-            While I remain your single point of contact and inspect every line of core logic, this team ensures we deliver enterprise-grade performance, bank-level security compliance, and robust API scaling protocols.
-          </p>
-          <div class="team-standards">
-            <div class="standard-pill"><span>🔒 HIPAA & SOC2 Ready</span></div>
-            <div class="standard-pill"><span>⚡ 24h Fail-Safe Checks</span></div>
-            <div class="standard-pill"><span>🛠️ Clean Code Audits</span></div>
-          </div>
-        </div>
-
-        <div class="team-image-side">
-          <div class="team-photo-placeholder">
-            <span class="placeholder-icon">👥</span>
-            <span class="placeholder-text">Swarm Core Team Image Slot</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CASE STUDIES -->
-  <section class="cases-section" id="cases">
-    <div class="section-container">
-      <div class="section-header">
-        <span class="section-pretitle">PROVEN IMPACT</span>
-        <h2 class="section-title">Automations Running in Production</h2>
-        <p class="section-desc">Explore brief details of how our custom-engineered systems transform manual workflows into optimized assets.</p>
-      </div>
-
-      <div class="cases-grid">
-        <!-- Case Card 1 -->
-        <div class="case-card glass-panel">
-          <div class="case-image-wrap">
-            <img src="assets/ecommerce.png" alt="E-Commerce Inventory Auto-Sync Swarm Mockup" loading="lazy">
-          </div>
-          <div class="case-card-body">
-            <div class="case-badge">E-COMMERCE & RETAIL</div>
-            <h3>E-Commerce Inventory Auto-Sync Swarm</h3>
-            <p class="case-summary">Engineered a multi-agent system that monitors stock changes, validates description schemas, and synchronizes product listings across Shopify, Amazon, and central ERP portals.</p>
-            <div class="case-metrics">
-              <div class="metric">
-                <span class="metric-num">99.9%</span>
-                <span class="metric-lbl">Sync accuracy</span>
-              </div>
-              <div class="metric">
-                <span class="metric-num">20 hrs</span>
-                <span class="metric-lbl">Saved per week</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Case Card 2 -->
-        <div class="case-card glass-panel">
-          <div class="case-image-wrap">
-            <img src="assets/real_estate.png" alt="Real Estate Acquisition Swarm Mockup" loading="lazy">
-          </div>
-          <div class="case-card-body">
-            <div class="case-badge">REAL ESTATE TECH</div>
-            <h3>Real Estate Lead Acquisition Swarm</h3>
-            <p class="case-summary">Developed a custom web agent network that crawls listings, qualifies property variables using LLM valuation models, and drafts personalized outreach templates.</p>
-            <div class="case-metrics">
-              <div class="metric">
-                <span class="metric-num">14x</span>
-                <span class="metric-lbl">Outreach volume</span>
-              </div>
-              <div class="metric">
-                <span class="metric-num">1.2 min</span>
-                <span class="metric-lbl">Cycle duration</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Case Card 3 -->
-        <div class="case-card glass-panel">
-          <div class="case-image-wrap">
-            <img src="assets/healthcare.png" alt="Healthcare Document Parsing Swarm Mockup" loading="lazy">
-          </div>
-          <div class="case-card-body">
-            <div class="case-badge">HEALTHCARE & COMPLIANCE</div>
-            <h3>Healthcare Document Routing Swarm</h3>
-            <p class="case-summary">Designed a secure document parsing swarm that extracts medical charts, audits records against compliance schemas, and automatically updates EHR endpoints.</p>
-            <div class="case-metrics">
-              <div class="metric">
-                <span class="metric-num">95%</span>
-                <span class="metric-lbl">Audit speedup</span>
-              </div>
-              <div class="metric">
-                <span class="metric-num">0%</span>
-                <span class="metric-lbl">Compliance leaks</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS SECTION -->
-  <section class="testimonials-section">
-    <div class="section-container">
-      <div class="section-header">
-        <span class="section-pretitle">SOCIAL PROOF</span>
-        <h2 class="section-title">Vetted by Operations & Tech Leaders</h2>
-        <p class="section-desc">Hear from the executives and operations managers who deployed our custom agent swarms to reclaim capacity.</p>
-      </div>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card glass-panel">
-          <div class="testimonial-rating">
-            <span>★★★★★</span>
-          </div>
-          <p class="testimonial-text">
-            "Mazin's team built a cognitive dispatch swarm that automated our routing workflow. We reclaimed 18 hours per dispatcher weekly. The ROI was clear in less than 30 days."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar bg-violet">SJ</div>
-            <div class="author-info">
-              <h4>Sarah Jenkins</h4>
-              <p>COO, ScaleFlow Logistics</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card glass-panel">
-          <div class="testimonial-rating">
-            <span>★★★★★</span>
-          </div>
-          <p class="testimonial-text">
-            "The Invoice Reconciliation system Mazin deployed has cut our weekly auditing cycle from 24 hours to under 3 minutes. The compliance checks are virtually bulletproof."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar bg-cyan">MC</div>
-            <div class="author-info">
-              <h4>Marcus Chen</h4>
-              <p>VP of Operations, FinTech Capital</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card glass-panel">
-          <div class="testimonial-rating">
-            <span>★★★★★</span>
-          </div>
-          <p class="testimonial-text">
-            "Before Mazin, our sales team spent hours manually scraping LinkedIn and copying contacts to HubSpot. The Lead Gen Swarm now does it automatically with semantic screening."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar bg-emerald">ER</div>
-            <div class="author-info">
-              <h4>Elena Rostova</h4>
-              <p>Director of Sales Ops, SaaSify</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT / BRIEFING FORM -->
-  <section class="contact-section" id="contact">
-    <div class="section-container contact-box glass-panel">
-      <div class="contact-header">
-        <span class="contact-alert"><span class="pulse-emerald"></span>INBOX OPEN FOR B2B BRIEFINGS</span>
-        <h2>Initiate Operational Alignment</h2>
-        <p>Brief Mazin Munir and our core team. We will review your current systems and draft a customized automation roadmap for your company.</p>
-      </div>
-
-      <form class="contact-form" id="agency-contact-form" novalidate>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="contact-name">Your Name *</label>
-            <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
-            <span class="error-message" id="error-name">Please enter your name</span>
-          </div>
-          <div class="form-group">
-            <label for="contact-company">Company Name *</label>
-            <input type="text" id="contact-company" name="company" placeholder="Acme Corp" required>
-            <span class="error-message" id="error-company">Please enter your company name</span>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="contact-email">Work Email *</label>
-            <input type="email" id="contact-email" name="email" placeholder="john@company.com" required>
-            <span class="error-message" id="error-email">Please enter a valid work email</span>
-          </div>
-          <div class="form-group">
-            <label for="contact-service">Target Automation Focus</label>
-            <select id="contact-service" name="service" class="custom-select form-select">
-              <option value="swarms">Multi-Agent Swarm Workflows</option>
-              <option value="data-sync">Cognitive Data & Spreadsheet Sync</option>
-              <option value="custom-llm">Bespoke LLM / RAG Integrations</option>
-              <option value="audit">Comprehensive Process Audit</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="contact-message">Workflow Details / Bottlenecks *</label>
-          <textarea id="contact-message" name="message" rows="4" placeholder="Describe the manual work your team does daily that you'd like to automate..." required></textarea>
-          <span class="error-message" id="error-message">Please share some workflow details</span>
-        </div>
-
-        <div class="form-footer">
-          <p class="form-privacy-note">
-            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="privacy-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-            We enforce complete NDA protocols. Your details are secure.
-          </p>
-          <button type="submit" class="btn btn-primary" id="btn-submit">
-            <span>Send Briefing Request</span>
-            <svg class="submit-arrow" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </button>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="main-footer">
-    <div class="section-container footer-grid">
-      <div class="footer-brand">
-        <div class="logo">
-          <span class="logo-badge">M</span>
-          <span class="logo-text">mazin<span class="logo-bold">munir</span><span class="logo-domain">.com</span></span>
-        </div>
-        <p class="footer-tagline-text">Custom Multi-Agent Workflows & High-Precision B2B Automation Systems.</p>
-        <span class="copyright">&copy; 2026 mazinmunir.com. All rights reserved.</span>
-      </div>
-
-      <div class="footer-links-group">
-        <div class="footer-links">
-          <h4>Capabilities</h4>
-          <a href="#services">Autonomous Swarms</a>
-          <a href="#services">Database Synchronization</a>
-          <a href="#services">Context-Aware LLMs</a>
-          <a href="#services">Process Blueprints</a>
-        </div>
-        <div class="footer-links">
-          <h4>Interactive</h4>
-          <a href="#sandbox">Agent Sandbox</a>
-          <a href="#calculator">ROI Estimates</a>
-        </div>
-        <div class="footer-links">
-          <h4>Contact & Info</h4>
-          <a href="#about">Mazin Munir Profile</a>
-          <a href="#contact">Direct Inquiry</a>
-          <a href="mailto:mazin@mazinmunir.com">mazin@mazinmunir.com</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Swarm Proposal Modal -->
-  <div class="proposal-modal-backdrop" id="proposal-modal-backdrop">
-    <div class="proposal-modal glass-panel">
-      <div class="modal-header">
-        <h3><span class="ping-dot-emerald"></span>COMPILED SWARM BLUEPRINT</h3>
-        <button class="btn-close-modal" id="btn-close-modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <div class="blueprint-summary-card">
-          <div class="summary-row">
-            <span class="summary-lbl">Feasibility Rating</span>
-            <span class="summary-val text-green" id="modal-feasibility">95% (High Match)</span>
-          </div>
-          <div class="summary-row">
-            <span class="summary-lbl">Nodes Deployed</span>
-            <span class="summary-val" id="modal-nodes-count">4 Active Agents</span>
-          </div>
-          <div class="summary-row">
-            <span class="summary-lbl">Workflow Loop</span>
-            <span class="summary-val" id="modal-workflow-type">Triggered Execution</span>
-          </div>
-        </div>
-
-        <div class="blueprint-roi-metrics">
-          <div class="roi-metric">
-            <span class="roi-lbl">EST. ANNUAL SAVINGS</span>
-            <span class="roi-num text-gradient" id="modal-annual-savings">$45,000</span>
-          </div>
-          <div class="roi-metric">
-            <span class="roi-lbl">EFFICIENCY BOOST</span>
-            <span class="roi-num color-cyan" id="modal-efficiency">18.5x faster</span>
-          </div>
-        </div>
-
-        <div class="blueprint-details">
-          <h4>Custom Swarm Flow</h4>
-          <div class="blueprint-flow-diagram" id="modal-flow-diagram">
-            <!-- Dynamically populated tags with arrows -->
-          </div>
-        </div>
-
-        <button class="btn btn-primary btn-block" id="btn-modal-deploy">
-          <span>Brief Mazin with this Blueprint</span>
-          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Script File -->
-  <script src="app.js"></script>
+    <!-- Script File -->
+    <script src="app.js"></script>
 </body>
+
 </html>
