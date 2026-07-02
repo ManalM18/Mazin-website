@@ -40,6 +40,11 @@
   /* Transition Curves */
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif; /* Change 'Outfit' to your desired font */
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'Space Mono', monospace;
 }
 
 /* ==========================================================================
@@ -946,6 +951,45 @@ img, canvas, svg {
   color: var(--text-secondary);
   line-height: 1.45;
 }
+
+/* ==========================================================================
+   MARQUEE SECTION
+   ========================================================================== */
+
+.marquee-container {
+  overflow: hidden; /* Clips the logos that slide off-screen */
+  width: 100%;
+  padding: 2rem 0;
+  background: var(--bg-primary);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 8rem; /* Space between logos */
+  width: max-content; /* Keeps them all in one line */
+  animation: scroll 30s linear infinite; /* Adjust 20s to control speed */
+  will-change: transform;
+}
+
+.marquee-track img {
+  height: 60px; /* Consistent height for all logos */
+  width: auto;
+  filter: grayscale(1); /* Optional: makes them "quiet luxury" style */
+  opacity: 0.7;
+  transition: var(--transition-smooth);
+}
+
+.marquee-track img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); } /* Scrolls exactly half-way, showing the duplicates */
+}
+
+
 
 /* ==========================================================================
    TRUST / CAPABILITIES SECTION
