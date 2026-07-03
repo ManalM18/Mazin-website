@@ -45,6 +45,11 @@
   --font-heading: 'Outfit', sans-serif; /* Change 'Outfit' to your desired font */
   --font-sans: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'Space Mono', monospace;
+
+  :root {
+  /* Reduce the max-width slightly to push content inward */
+  --max-width: 2000px; 
+}
 }
 
 /* ==========================================================================
@@ -122,7 +127,7 @@ img, canvas, svg {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 200px;
 }
 
 .section-header {
@@ -317,7 +322,7 @@ img, canvas, svg {
   max-width: var(--max-width);
   height: 100%;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -499,7 +504,7 @@ img, canvas, svg {
   gap: 48px;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 200px;
 }
 
 .hero-content {
@@ -527,7 +532,7 @@ img, canvas, svg {
 
 .hero-title {
   font-family: var(--font-heading);
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 900;
   line-height: 1.2;
   letter-spacing: -0.03em;
@@ -536,6 +541,30 @@ img, canvas, svg {
   white-space: nowrap;
 }
 
+/* Container for the list */
+.hero-check-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px; /* Space between the paragraph and the list */
+}
+
+.hero-check-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* The tick mark */
+.hero-check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-cyan);
+    font-weight: bold;
+}
 .hero-subtitle {
   font-size: 1.15rem;
   line-height: 1.6;
@@ -585,6 +614,26 @@ img, canvas, svg {
    INTERACTIVE SWARM BLUEPRINT GENERATOR WIDGET (HERO WIDGET)
    ========================================================================== */
 
+   .simulator-wrapper {
+    max-width: 600px; /* Constrains the widget size */
+    margin-right: 20;
+    margin-top: 60px;
+    margin-left: auto;
+    padding: 0 24px;
+}
+
+/* Ensure the canvas container fits within the new wrapper */
+.hero-canvas-container {
+    width: 100%;
+    position: relative;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .simulator-wrapper {
+        max-width: 100%; /* Full width on smaller screens for better touch access */
+    }
+}
 .hero-canvas-container {
   position: relative;
   width: 100%;
@@ -985,6 +1034,34 @@ img, canvas, svg {
         text-align: center;
     }
 }
+
+.philosophy-item {
+    display: flex; /* Aligns icon and text side-by-side */
+    gap: 20px; /* Space between icon and text */
+    margin-bottom: 40px; /* Vertical space between the two items */
+}
+
+.icon-box {
+    font-size: 2rem; /* Adjust icon size as needed */
+    flex-shrink: 0; /* Ensures the icon doesn't squish */
+    padding-top: 5px; /* Fine-tune alignment with the heading */
+}
+
+.text-content h4 {
+    margin: 0 0 10px 0;
+    color: var(--text-primary);
+}
+
+.text-content p {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    max-width: 600px;
+}
+.philosophy-section {
+    /* Increase this value to create more space */
+    margin-top: 60px; 
+}
 /* ==========================================================================
    MARQUEE SECTION
    ========================================================================== */
@@ -1017,7 +1094,63 @@ img, canvas, svg {
   to { transform: translateX(-20%); } /* Scrolls exactly half-way, showing the duplicates */
 }
 
+/* ==========================================================================
+   OUR OPERATIONAL PHILOSOPHY
+   ========================================================================== */
 
+   .architect-card {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #e5e5e7; /* Dark background color */
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #1f2937;
+}
+
+.architect-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.architect-badge {
+    background: #4f46e5; /* Purple badge color */
+    color: white;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+}
+
+.portrait-slot {
+    border: 2px dashed #e2e4e7; /* Dashed border color */
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.architect-info h3 {
+    margin: 0 0 8px 0;
+    color: rgb(0, 0, 0);
+}
+
+.architect-title {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.architect-specialty {
+    color: #4f46e5;
+    font-family: monospace;
+    font-size: 0.85rem;
+}
 /* ==========================================================================
    SERVICES SECTION
    ========================================================================== */
@@ -1128,7 +1261,119 @@ img, canvas, svg {
   font-weight: 700;
 }
 
+/* ==========================================================================
+   THE ROADMAP
+   ========================================================================== */
 
+  .roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.phase-card {
+    background: #ffffff; /* Matches the dark background in image_07d18a.jpg */
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.phase-label {
+    background: #4c00b0; /* Dark blue badge */
+    color: #fbfbfc;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.phase-time {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.deliverable {
+    margin-top: auto; /* Pushes deliverable to the bottom of the card */
+    padding-top: 20px;
+    border-top: 1px solid #374151;
+    font-size: 0.85rem;
+    color: #303031;
+}
+
+.roadmap-header-container {
+    text-align: center; /* Centers the text */
+    max-width: 700px;   /* Prevents the description from getting too wide */
+    margin: 0 auto 60px auto; /* Centers the container and adds space below */
+}
+
+/* Optional: Styling for your pre-title to match the image */
+.section-pretitle {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--accent-indigo);
+    margin-bottom: 12px;
+}
+
+/* Add this to create separation after the roadmap section */
+.roadmap-section {
+  /* Increase this value to create more space (e.g., 100px, 120px) */
+  margin-bottom: 120px; 
+}
+
+/* Optional: Ensure consistent spacing globally */
+.section-container {
+  padding-bottom: 0; /* Prevents double spacing if padding is also used */
+}
+
+
+/* ==========================================================================
+   <!-- What to Expect During Integration -->
+   ========================================================================== */
+
+
+.white-info-card {
+    background-color: #ffffff;
+    color: #000000;
+    
+    /* Rounded corners */
+    border-radius: 20px; 
+    
+    /* Adds breathing room inside the box */
+    padding: 60px; 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1000px;
+    
+    /* Optional: A very subtle shadow to lift it off the background */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
+}
+.white-info-card h2 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.white-info-card h3 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.white-info-card p {
+    color: #333333; /* Dark gray for readability */
+    line-height: 1.6;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
 /* ==========================================================================
    TRUST / CAPABILITIES SECTION
    ========================================================================== */
@@ -1664,7 +1909,7 @@ img, canvas, svg {
 
 .about-content-full {
   width: 100%;       /* Responsive default */
-  max-width: 70%;    /* This forces the text to stop at 70% */
+  max-width: 65%;    /* This forces the text to stop at 70% */
   margin: 0;         /* Ensures it sticks to the left */
   text-align: left;  /* Explicitly aligns text to the left */
 }
