@@ -492,7 +492,7 @@ img, canvas, svg {
 
 .hero-section {
   padding-top: calc(var(--header-height) + 64px);
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   position: relative;
   overflow: hidden;
 }
@@ -528,6 +528,7 @@ img, canvas, svg {
   align-items: center;
   gap: 8px;
   margin-bottom: 24px;
+  padding-top: 60px;
 }
 
 .hero-title {
@@ -1019,6 +1020,9 @@ img, canvas, svg {
     padding: 80px 0;
 }
 
+.standards-section {
+  padding-top: 10px;
+}
 .standards-list {
     margin-top: 24px;
     display: flex;
@@ -1194,6 +1198,7 @@ img, canvas, svg {
   background-color: rgba(175, 174, 174, 0.4);
   box-shadow: var(--shadow-lg);
   border-color: transparent;
+  
 }
 
 .service-card:hover::before {
@@ -1273,12 +1278,21 @@ img, canvas, svg {
 }
 
 .phase-card {
-    background: #ffffff; /* Matches the dark background in image_07d18a.jpg */
-    border: 1px solid #1f2937;
+    background: rgba(241, 245, 249, 0.8); /* Matches the dark background in image_07d18a.jpg */
+    border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 32px;
     display: flex;
     flex-direction: column;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.phase-card:hover {
+    /* Increases the shadow depth for an "elevated" feel */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    
+    /* Slightly lifts the card up */
+    transform: translateY(-5px);
 }
 
 .phase-label {
@@ -1324,6 +1338,7 @@ img, canvas, svg {
 .roadmap-section {
   /* Increase this value to create more space (e.g., 100px, 120px) */
   margin-bottom: 120px; 
+  margin-top: 20px;
 }
 
 /* Optional: Ensure consistent spacing globally */
@@ -1338,20 +1353,15 @@ img, canvas, svg {
 
 
 .white-info-card {
-    background-color: #ffffff;
+    background-color: rgba(241, 245, 249, 0.8);
     color: #000000;
-    
-    /* Rounded corners */
     border-radius: 20px; 
-    
-    /* Adds breathing room inside the box */
     padding: 60px; 
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
     margin: 40px auto;
     max-width: 1000px;
-    
-    /* Optional: A very subtle shadow to lift it off the background */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .white-info-card h2 {
     color: #000000;
@@ -1374,6 +1384,14 @@ img, canvas, svg {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+
+.white-info-card:hover {
+    /* Increases the shadow depth for an "elevated" feel */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    
+    /* Slightly lifts the card up */
+    transform: translateY(-5px);
+}
 /* ==========================================================================
    TRUST / CAPABILITIES SECTION
    ========================================================================== */
@@ -1382,7 +1400,7 @@ img, canvas, svg {
   padding: 48px 0;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-  background-color: rgba(175, 174, 174, 0.4);
+  background-color: rgba(230, 233, 236, 0.8);
 }
 
 .trust-lead {
@@ -1540,6 +1558,7 @@ img, canvas, svg {
 
 .calculator-section {
   padding: 100px 0;
+  padding-top: 40px;
 }
 
 .calculator-grid {
@@ -1928,8 +1947,10 @@ img, canvas, svg {
    ========================================================================== */
 
 .team-section {
-  padding: 100px 0;
   border-top: 1px solid var(--border-color);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 160px;
 }
 
 .team-grid-layout {
@@ -1978,9 +1999,9 @@ img, canvas, svg {
 }
 
 .team-image-side {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+    /* Set a maximum width to control the total size of the grid */
+    max-width: 300px; 
+    margin-left: auto; /* Keeps the grid aligned to the right, or 'auto' to center */
 }
 
 .team-photo-placeholder {
@@ -2018,12 +2039,72 @@ img, canvas, svg {
   letter-spacing: 0.05em;
 }
 
+.team-photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates 2 columns */
+    gap: 20px; /* Spacing between the 4 boxes */
+    padding-top: 80px;
+}
+
+.team-photo-box {
+    aspect-ratio: 1 / 1; /* Makes each box a perfect square */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the square without stretching */
+}
+
+.member-card {
+    background: #0d1117; /* Matches the dark theme */
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 10px;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-image-wrapper {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+}
+.member-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-card h3 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0 0 1px 0;
+}
+
+.member-role {
+    color: #22d3ee; /* Cyan color matching your aesthetic */
+    font-size: 0.8rem;
+    font-family: monospace;
+}
 /* ==========================================================================
    CASE STUDIES SECTION
    ========================================================================== */
 
 .cases-section {
-  padding: 100px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .cases-grid {
@@ -2130,7 +2211,8 @@ img, canvas, svg {
    ========================================================================== */
 
 .testimonials-section {
-  padding: 100px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border-top: 1px solid var(--border-color);
 }
 
@@ -2298,7 +2380,7 @@ img, canvas, svg {
   padding: 12px 16px;
   border-radius: 8px;
   border: 1px solid var(--border-color);
-  background-color: rgba(15, 23, 42, 0.6);
+  background-color: rgba(210, 210, 211, 0.6);
   font-family: var(--font-sans);
   font-size: 0.95rem;
   color: var(--text-primary);
@@ -2381,7 +2463,7 @@ img, canvas, svg {
    ========================================================================== */
 
 .main-footer {
-  background-color: rgba(175, 174, 174, 0.4);
+  background-color: rgba(241, 245, 249, 0.8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid var(--border-color);
