@@ -2181,33 +2181,30 @@ img, canvas, svg {
 }
 
 @media (max-width: 992px) {
-    /* Center the team section container */
+    /* 1. Force the team section to respect the screen edges */
     .team-section {
-        padding-right: 20px !important; /* Fixes your right-side padding issue */
+        padding-left: 20px !important;
+        padding-right: 20px !important;
         text-align: center;
     }
 
-    /* Stack the grid columns and center the text */
-    .team-grid-layout {
-        grid-template-columns: 1fr !important;
-        gap: 40px;
-    }
-
-    .team-content-side {
-        align-items: center; /* Centers text and pills horizontally */
-    }
-
-    /* Centers the photo grid cards */
+    /* 2. Force the photo grid to align centrally */
     .team-photo-grid {
-        justify-items: center;
-        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr !important; /* Stack cards vertically */
+        justify-items: center; /* Centers cards horizontally */
+        gap: 20px;
+        padding-top: 40px;
     }
 
-    /* Ensures the team image side doesn't get pushed to the right */
-    .team-image-side {
-        margin: 0 auto !important;
+    /* 3. Ensure the cards themselves are centered */
+    .member-card {
+        width: 100%;
+        max-width: 300px; /* Prevents cards from getting too wide on mobile */
+        margin: 0 auto;   /* Centers the card in the available space */
     }
 }
+
 /* ==========================================================================
    CASE STUDIES SECTION
    ========================================================================== */
