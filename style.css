@@ -232,6 +232,12 @@ img, canvas, svg {
   border-radius: 6px;
 }
 
+.header-cta .btn-primary {
+    margin-right: 24px; /* Adjust this value (e.g., 10px, 30px) to move it left */
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
 .btn-block {
   width: 100%;
 }
@@ -305,7 +311,7 @@ img, canvas, svg {
   width: 100%;
   height: var(--header-height);
   z-index: 99;
-  background: rgba(244, 245, 247, 0.75);
+  background: rgba(245, 245, 245, 0.973);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
@@ -314,7 +320,7 @@ img, canvas, svg {
 
 .main-header.scrolled {
   height: 70px;
-  background: rgba(244, 245, 247, 0.95);
+  background: rgb(255, 255, 255);
   box-shadow: var(--shadow-sm);
 }
 
@@ -331,8 +337,7 @@ img, canvas, svg {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  cursor: pointer;
+  gap: 12px;
 }
 
 .logo-badge {
@@ -350,16 +355,21 @@ img, canvas, svg {
   box-shadow: 0 4px 10px var(--accent-indigo-glow);
 }
 
-.logo-text {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--text-primary);
-  letter-spacing: -0.01em;
+.logo-text-stack {
+  display: flex;
+  flex-direction: column; /* Stacks the names */
+  line-height: 1;
 }
 
-.logo-bold {
-  font-weight: 700;
+.logo-name-top, .logo-name-bottom {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+
+.logo-purple {
+  
   color: var(--accent-indigo);
 }
 
@@ -368,6 +378,16 @@ img, canvas, svg {
   font-size: 0.95rem;
 }
 
+.logo-image {
+    height: 35px;      /* Adjust height to match your nav bar */
+    width: auto;       /* Maintains aspect ratio */
+
+}
+
+/* Optional: Add hover effect if desired */
+.logo-image:hover {
+    opacity: 0.8;
+}
 .desktop-nav {
   display: flex;
   align-items: center;
@@ -424,6 +444,8 @@ img, canvas, svg {
   background-color: var(--text-primary);
   transition: var(--transition-smooth);
 }
+
+
 
 /* Mobile Nav Styles */
 .mobile-nav {
@@ -1086,7 +1108,7 @@ img, canvas, svg {
 }
 
 .marquee-track img {
-  height: 60px; /* Consistent height for all logos */
+  height: 70px; /* Consistent height for all logos */
   width: auto;
   transition: var(--transition-smooth);
 }
@@ -1316,9 +1338,11 @@ img, canvas, svg {
     padding-top: 20px;
     border-top: 1px solid #374151;
     font-size: 0.85rem;
-    color: #303031;
+    color: #1b1a1b;
 }
-
+.deliverable-label {
+    color: var(--accent-indigo); /* Or use any color code like #5d5dff */
+}
 .roadmap-header-container {
     text-align: center; /* Centers the text */
     max-width: 700px;   /* Prevents the description from getting too wide */
@@ -1364,7 +1388,7 @@ img, canvas, svg {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .white-info-card h2 {
-    color: #000000;
+    color: #4c00b0;
     text-align: center;
     margin-bottom: 40px;
 }
