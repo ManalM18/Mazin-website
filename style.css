@@ -1,10 +1,7 @@
 /* ==========================================================================
    DESIGN SYSTEM & GLOBAL VARIABLES (LIGHT THEME)
    ========================================================================== */
-* {
 
-    background-color: rgba(255, 0, 0, 0.1) !important;
-}
 
 /* Responsive fix for the header */
 @media (max-width: 992px) {
@@ -19,6 +16,26 @@
   .menu-toggle {
     display: flex !important; /* Show burger menu on mobile */
   }
+}
+
+@media (max-width: 768px) {
+  .section-container, 
+  .header-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .cases-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 :root {
@@ -65,11 +82,11 @@
   --font-sans: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'Space Mono', monospace;
 
-  :root {
+  
   /* Reduce the max-width slightly to push content inward */
   --max-width: 2000px; 
 }
-}
+
 
 /* ==========================================================================
    PAGE LIVE BACKGROUND STYLING
