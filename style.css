@@ -2179,6 +2179,35 @@ img, canvas, svg {
     font-size: 0.8rem;
     font-family: monospace;
 }
+
+@media (max-width: 992px) {
+    /* Center the team section container */
+    .team-section {
+        padding-right: 20px !important; /* Fixes your right-side padding issue */
+        text-align: center;
+    }
+
+    /* Stack the grid columns and center the text */
+    .team-grid-layout {
+        grid-template-columns: 1fr !important;
+        gap: 40px;
+    }
+
+    .team-content-side {
+        align-items: center; /* Centers text and pills horizontally */
+    }
+
+    /* Centers the photo grid cards */
+    .team-photo-grid {
+        justify-items: center;
+        margin: 0 auto;
+    }
+
+    /* Ensures the team image side doesn't get pushed to the right */
+    .team-image-side {
+        margin: 0 auto !important;
+    }
+}
 /* ==========================================================================
    CASE STUDIES SECTION
    ========================================================================== */
