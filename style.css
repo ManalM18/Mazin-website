@@ -1329,8 +1329,11 @@ img, canvas, svg {
    ========================================================================== */
 @media (max-width: 992px) {
     .roadmap-grid {
-        /* Force vertical stacking on mobile/tablet */
+        /* Force 1 column on mobile/tablet so all 4 items appear */
         grid-template-columns: 1fr !important; 
+        /* Ensure the container takes full available width */
+        width: 100% !important;
+        padding: 0 20px !important;
     }
 }
   .roadmap-grid {
