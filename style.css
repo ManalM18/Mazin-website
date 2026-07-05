@@ -1431,6 +1431,7 @@ img, canvas, svg {
     max-width: 1000px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
 }
 .white-info-card h2 {
     color: #4c00b0;
@@ -1452,6 +1453,7 @@ img, canvas, svg {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    text-align: center;
 }
 
 .white-info-card:hover {
@@ -1460,6 +1462,16 @@ img, canvas, svg {
     
     /* Slightly lifts the card up */
     transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr; /* Stack items vertically on mobile */
+    }
+    
+    .white-info-card {
+        padding: 30px; /* Reduces padding for smaller screens */
+    }
 }
 /* ==========================================================================
    TRUST / CAPABILITIES SECTION
