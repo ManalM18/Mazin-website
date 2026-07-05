@@ -2790,3 +2790,16 @@ img, canvas, svg {
     font-size: 2.75rem;
   }
 }
+
+@media (max-width: 992px) {
+  .hero-container {
+    padding: 0 20px !important; /* Reduces side padding significantly */
+    grid-template-columns: 1fr !important; /* Stacks the two columns vertically */
+    gap: 32px; /* Adjusts spacing between the stacked items */
+  }
+
+  .hero-title {
+    font-size: 1.8rem !important; /* Shrinks the title so it fits on one screen */
+    white-space: normal !important; /* Allows text to wrap instead of cutting off */
+  }
+}
