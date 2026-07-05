@@ -2193,15 +2193,18 @@ img, canvas, svg {
         display: grid;
         grid-template-columns: 1fr !important; /* Stack cards vertically */
         justify-items: center; /* Centers cards horizontally */
-        gap: 20px;
-        padding-top: 40px;
+        margin: 0 auto !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+        
     }
 
     /* 3. Ensure the cards themselves are centered */
     .member-card {
         width: 100%;
         max-width: 300px; /* Prevents cards from getting too wide on mobile */
-        margin: 0 auto;   /* Centers the card in the available space */
+        margin: 0 auto !important;   /* Centers the card in the available space */
     }
 }
 
