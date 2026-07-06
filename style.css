@@ -1111,7 +1111,7 @@ img, canvas, svg {
 
 .text-content h4 {
     margin: 0 0 10px 0;
-    color: var(--text-primary);
+    color: #4c00b0;
 }
 
 .text-content p {
@@ -1381,7 +1381,7 @@ img, canvas, svg {
 .deliverable {
     margin-top: auto; /* Pushes deliverable to the bottom of the card */
     padding-top: 20px;
-    border-top: 1px solid #374151;
+   
     font-size: 0.85rem;
     color: #1b1a1b;
 }
@@ -1490,7 +1490,7 @@ img, canvas, svg {
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: var(--text-muted);
+  color: #4c00b0;
   margin-bottom: 32px;
 }
 
@@ -1759,7 +1759,7 @@ img, canvas, svg {
   font-family: var(--font-heading);
   font-size: 3.5rem;
   font-weight: 900;
-  color: #08470d;
+  color: #4c00b0;
   line-height: 1.1;
   margin-bottom: 12px;
   letter-spacing: -0.03em;
@@ -2555,14 +2555,14 @@ img, canvas, svg {
 
 .form-privacy-note {
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: #4c00b0;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
 .privacy-lock {
-  color: var(--text-muted);
+  color: #000000;
   flex-shrink: 0;
 }
 
